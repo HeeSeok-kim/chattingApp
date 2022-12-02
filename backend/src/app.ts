@@ -1,6 +1,6 @@
-import 'dotenv/config';
 import express, {NextFunction, Request, Response} from "express";
-
+const dotev = require('dotenv')
+dotev.config();
 const app = express();
 const PORT = process.env.PORT;
 app.use(express.json());

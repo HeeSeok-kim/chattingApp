@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app",
-    "dev": "nodemon --watch \"*.ts\" --exec \"ts-node\" src/app.ts"
+    "dev": "nodemon -L --watch \"*.ts\" --exec \"ts-node\" src/app.ts"
   },
   "author": "",
   "license": "ISC",
