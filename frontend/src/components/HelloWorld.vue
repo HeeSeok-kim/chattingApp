@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import BaseInputBox from './inputbox/BaseInputbox.vue';
 
 defineProps<{ msg: string }>()
 
@@ -7,6 +8,10 @@ const count = ref(0)
 </script>
 
 <template>
+  <BaseInputBox
+    :props-placeholder="'zzzzzz'"
+    :props-value="'zbbbbbb'"
+  />
   <h1>{{ msg }}</h1>
 
   <div class="card">
